@@ -559,6 +559,7 @@ html:not(.js) .d-ctl,html:not(.js) .d-rail,html:not(.js) .d-spot{display:none}ht
 .q2-g{min-height:34px;margin-top:6px}
 .q2-g span{position:relative;display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:999px;background:linear-gradient(135deg,#ffe8a8,#f6c454);color:#7a4a00;font:700 12.5px Lexend,sans-serif;box-shadow:0 6px 14px rgba(239,175,58,.35)}
 .q2-g svg{width:16px;height:16px}
+.q2-g .no{background:#e8ebf3;color:#6f7895;box-shadow:none}.q2-g .no svg{filter:grayscale(1);opacity:.5}
 .q2-sec{padding-top:12px;margin-top:8px;border-top:1px solid #edf0f6}
 .q2-l{margin:0;font-size:12.5px;color:var(--lmuted);font-weight:600}
 .q2-n{margin:2px 0 0;font:800 20px Lexend,sans-serif}.q2-n small,.q2-m small{font-size:12px;color:var(--lmuted);font-weight:600}
@@ -573,6 +574,7 @@ html:not(.js) .d-ctl,html:not(.js) .d-rail,html:not(.js) .d-spot{display:none}ht
 .q2-tl i,.q2-mb i{transition:width 1.4s cubic-bezier(.33,1,.68,1)}
 .q2s.go .q2{animation:q2In .9s cubic-bezier(.2,.8,.2,1) var(--d) both}
 .q2s.go .q2-g span{animation:pop .55s cubic-bezier(.3,1.6,.5,1) var(--c) both,badge 3.2s ease-in-out calc(var(--c) + .5s) infinite}
+.q2s.go .q2-g .no{animation:pop .55s cubic-bezier(.3,1.6,.5,1) var(--c) both}
 .q2s.go .q2-tl .gf{animation:grow 1.2s cubic-bezier(.33,1,.68,1) var(--c) both}
 .q2s.go .q2:not(.t1) .q2-mb i{animation:shrink 1.4s cubic-bezier(.33,1,.68,1) var(--c) both}
 @keyframes q2In{from{opacity:0;transform:translateY(40px) scale(.97)}}
@@ -2412,7 +2414,7 @@ html.snap .coach,html:not(.js) .coach{display:none!important}
 <h2 class="rv">Đầu tư nhiều năm <span class="g">và ưu đãi đi kèm</span></h2>
 <div class="tabs rv" role="tablist" data-coach="tab-pilot" data-coach-target="[data-tab=pilot]" data-coach-text="Bấm xem phương án thử&nbsp;nghiệm" data-coach-delay="2400"><button class="on" data-tab="main">Phương án tổng thể · đề&nbsp;xuất</button><button data-tab="pilot">Phương án thử&nbsp;nghiệm</button></div>
 <div class="tabpane on" data-pane="main"><p class="pa-tag nojs-l">Phương án tổng thể</p><div class="q2s"><div class="q2 t1" style="--d:0.00s;--c:0.60s">
-  <div><p class="q2-k">Đối tác trải nghiệm</p><p class="q2-y">1 năm</p><div class="q2-g"></div></div>
+  <div><p class="q2-k">Đối tác trải nghiệm</p><p class="q2-y">1 năm</p><div class="q2-g"><span class="no"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="10" width="17" height="11" rx="2" fill="#efaf3a"/><rect x="2.5" y="7" width="19" height="4.5" rx="1.6" fill="#d9941f"/><rect x="11" y="7" width="2" height="14" fill="#fff" opacity=".7"/><path d="M12 7C10.6 4 7 3.4 7 5.6 7 7.2 10 7 12 7zm0 0c1.4-3 5-3.6 5-1.4C17 7.2 14 7 12 7z" fill="#d9941f"/></svg>Không có ưu đãi</span></div></div>
   <div class="q2-sec"><p class="q2-l">Thời gian sử dụng</p><p class="q2-n"><span class="ct" data-from="12" data-to="12">12</span> <small>tháng</small></p>
     <div class="q2-tl"><i class="pd" style="width:17.4%"></i><i class="gf" style="width:0.0%"></i></div></div>
   <div class="q2-sec"><p class="q2-l">Chi phí theo tháng</p><p class="q2-m"><span class="ct" data-from="21185000" data-to="21185000">21.185.000</span> <small>đ</small></p>
@@ -2441,7 +2443,7 @@ html.snap .coach,html:not(.js) .coach{display:none!important}
   <div class="q2-sec q2-t"><p class="q2-l">Tổng đầu tư ban đầu</p><p class="q2-n">839.100.000 <small>đ</small></p></div>
 </div></div></div>
 <div class="tabpane" data-pane="pilot"><p class="pa-tag nojs-l">Phương án thử nghiệm</p><div class="q2s"><div class="q2 t1" style="--d:0.00s;--c:0.60s">
-  <div><p class="q2-k">Đối tác trải nghiệm</p><p class="q2-y">1 năm</p><div class="q2-g"></div></div>
+  <div><p class="q2-k">Đối tác trải nghiệm</p><p class="q2-y">1 năm</p><div class="q2-g"><span class="no"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="10" width="17" height="11" rx="2" fill="#efaf3a"/><rect x="2.5" y="7" width="19" height="4.5" rx="1.6" fill="#d9941f"/><rect x="11" y="7" width="2" height="14" fill="#fff" opacity=".7"/><path d="M12 7C10.6 4 7 3.4 7 5.6 7 7.2 10 7 12 7zm0 0c1.4-3 5-3.6 5-1.4C17 7.2 14 7 12 7z" fill="#d9941f"/></svg>Không có ưu đãi</span></div></div>
   <div class="q2-sec"><p class="q2-l">Thời gian sử dụng</p><p class="q2-n"><span class="ct" data-from="12" data-to="12">12</span> <small>tháng</small></p>
     <div class="q2-tl"><i class="pd" style="width:17.4%"></i><i class="gf" style="width:0.0%"></i></div></div>
   <div class="q2-sec"><p class="q2-l">Chi phí theo tháng</p><p class="q2-m"><span class="ct" data-from="6435000" data-to="6435000">6.435.000</span> <small>đ</small></p>
